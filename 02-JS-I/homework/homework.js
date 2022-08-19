@@ -30,7 +30,7 @@ const nuevoModulo = 21 % 5 === 1;
 function devolverString(str) {
   // "Return" la string provista: str
   // Tu código:
- var str = 'Lautaro'
+ var str = 'Henry'
  return str ;
   
   
@@ -167,7 +167,10 @@ function redondearHaciaArriba(num) {
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  return Math.random;
+  
+  return Math.random();
+
+ 
   
 }
 
@@ -176,14 +179,16 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  if (numero>0)  {
-    return ('Es positivo')
-  } else if (numero<0) {
-    return ('Es negativo') 
-  }
-  else if ( numero == 0) { return ('false')
   
-  }
+  
+    if (numero===0)  {
+      return false }
+      if (numero>0)
+    { return 'Es positivo'}
+      {return 'Es negativo'}
+  
+    
+  
   
 
   
@@ -202,7 +207,9 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-   return ( nombre ) + ( apellido )
+  var combinado = nombre + ' ' + apellido;
+  return combinado;
+
   
 }
 
@@ -252,12 +259,14 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  if ( letra === "A" ) { return ("Es Vocal")}
-   else if ( letra == string.length >1 ) return "dato invalido"
-   else if ( letra !== "A", "E", "I", "O", "U" ) { return ("Dato incorrecto")}
-  
-  
-  
+  if(letra.length > 1){
+    return "Dato incorrecto"
+  }
+  if(letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u"){
+    return "Es vocal"
+  }
+  return "Dato incorrecto"
+
 }
 
 
