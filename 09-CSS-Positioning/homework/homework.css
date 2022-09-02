@@ -60,9 +60,22 @@ archivo en cualquiera de estas carpetas, estás en el lugar equivocado.
 
 /* Ejercicio 6. */
 
-#ejercicioSiete { 
-    align-items: center;
-  
-    flex-direction:
+#ejercicioSiete {
+       
+}
+
+#elementoUno{
+    align-self: flex-start;
+
+}
+#elementoDos {
+    align-self: center;
     
+}
+#elementoTres{
+    align-self: flex-start;
+}
+
+#elementoCuatro{
+    align-self: flex-end;
 }
