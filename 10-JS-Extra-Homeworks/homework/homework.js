@@ -9,14 +9,14 @@ function deObjetoAmatriz(objeto){
       B: 2,
       C: 3
     }) ➞ [["D", 1], ["B", 2], ["C", 3]]*/
-  //Escribe tu código aquí
-  let matriz =[];
-  for (var propiedad in objeto) {
-    matriz.push ([propiedad,objeto[propiedad]]);
-  };
-  return matriz;
-  
-}
+//  Escribe tu código aquí
+//  let matriz =[];
+//  for (var propiedad in objeto) {
+//    matriz.push ([propiedad,objeto[propiedad]]);
+//  };
+//  return matriz;
+//}
+
 
 
 function numberOfCharacters(string) {
@@ -136,17 +136,17 @@ function buscoInterseccion(arreglo1, arreglo2){
   //Si no tienen elementos en común, retornar un arreglo vacío.
   //Aclaración: los arreglos no necesariamente tienen la misma longitud
   //Escribe tu código aquí
-  var nuevoarray= [];
+  var nuevoArray= [];
   for (var i=0; i<arreglo1.length; i++){
     for (var j=0; j<arreglo2.length; j++){
       if (arreglo1[i]===arreglo2[j]){
-        nuevoarray.push(arreglo1[i])
+        nuevoArray.push(arreglo1[i])
       }
       
     }
   }
 
-  return nuevoarray;
+  return nuevoArray;
 
 }
 
